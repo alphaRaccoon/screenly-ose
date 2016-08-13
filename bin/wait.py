@@ -8,7 +8,7 @@ def is_routing_up():
         sh.grep(sh.route(), 'default')
         return True
     except sh.ErrorReturnCode_1:
-        return False
+        return True
 
 
 for _ in range(1, 30):
